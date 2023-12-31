@@ -1,6 +1,7 @@
 package main
 
 import (
+	"database/sql"
 	"log"
 	"net/http"
 	"os"
@@ -8,6 +9,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/othiagosilva/GraphQL/graph"
+	"github.com/othiagosilva/GraphQL/internal/database"
 	_ "github.com/mattn/go-sqlite3"
 )
 

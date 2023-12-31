@@ -6,7 +6,7 @@ import ("database/sql"
 )
 
 type Category struct{
-	db *sql.db //possibilita trabalhar com banco de dados
+	db *sql.DB //possibilita trabalhar com banco de dados
 	ID string
 	Name string
 	Description string
