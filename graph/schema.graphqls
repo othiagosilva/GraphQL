@@ -1,3 +1,4 @@
+# types são basicamente modelos
 type Category{
   id: ID!
   name: String!
@@ -12,6 +13,7 @@ type Course{
   category: Category!
 }
 
+# input auxilia na entrada de dados
 input NewCategory{
   name: String!
   description: String
@@ -23,12 +25,14 @@ input NewCourse{
   categoryId: ID!
 }
 
+# Query possibilita a busca
 type Query{
   categories: [Category!]!
   courses: [Course!]!
 }
 
+# Mutation é utilizado para definirmos todas as mudanças que formos realizar nos dados
 type Mutation{
-  createCategory(input: NewCategory!): Cateogry!
+  createCategory(input: NewCategory!): Category!
   createCourse(input: NewCourse!): Course!
 }
